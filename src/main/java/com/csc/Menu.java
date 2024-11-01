@@ -6,11 +6,10 @@ public class Menu {
 
     private static Scanner scanner = new Scanner(System.in);
 
-
     public static Integer prompt(Integer lowerBound, Integer upperBound, Integer defaultValue, String promptMessage, String errorMessage) {
         Integer userValue;
 
-  while (true) {
+        while (true) {
             String modifiedPrompt = promptMessage;
             if (defaultValue != null) {
                 modifiedPrompt += " Enter 'default' to use the default value of " + defaultValue + ".";
